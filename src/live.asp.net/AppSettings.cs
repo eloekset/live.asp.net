@@ -16,5 +16,9 @@ namespace live.asp.net
         public string AzureStorageBlobName { get; set; }
 
         public string AzureStorageContainerName { get; set; }
+        public string GitHubContentOwner { get; set; }
+        public string GitHubContentRepository { get; set; }
+        public string GitHubContentBranch { get; set; }
+        public string GitHubContentShowDetailsFolder { get; set; }
     }
 }
