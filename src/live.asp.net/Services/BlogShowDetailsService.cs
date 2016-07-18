@@ -109,7 +109,7 @@ namespace live.asp.net.Services
                     TryParseDay(linkWithDate.Groups[3].Value, out blogDay))
                 {
                     DateTime blogDate = new DateTime(blogYear, blogMonth, blogDay);
-                    TimeSpan blogAfterShowTimeSpan = blogDate - showDate;
+                    TimeSpan blogAfterShowTimeSpan = blogDate - showDate.Date;
                     if (blogAfterShowTimeSpan.TotalDays >= 0 && blogAfterShowTimeSpan.TotalDays < 2)
                     {
                         // Assume this blog post is for the show we're looking for
