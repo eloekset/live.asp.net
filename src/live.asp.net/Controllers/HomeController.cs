@@ -42,10 +42,11 @@ namespace live.asp.net.Controllers
         public async Task<IActionResult> Show(string showId, bool? disableCache)
         {
             var show = await _showsService.GetShowAsync(showId, User, disableCache ?? false);
-            var showDetails = await _showDetails.LoadAsync(showId);
 
             if (show != null)
             {
+                var showDetails = await _showDetails.LoadAsync(showId, show.ShowDate);
+
                 return View(new ShowViewModel
                 {
                     Show = show,

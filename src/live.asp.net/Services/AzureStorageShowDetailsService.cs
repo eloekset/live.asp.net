@@ -31,7 +31,7 @@ namespace live.asp.net.Services
             _telemtry = telemetry;
         }
 
-        public async Task<ShowDetails> LoadAsync(string showId)
+        public async Task<ShowDetails> LoadAsync(string showId, DateTimeOffset showDate)
         {
             var showDetails = _cache.Get<ShowDetails>(GetCacheKey(showId));
 

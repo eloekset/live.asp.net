@@ -25,7 +25,7 @@ namespace live.asp.net.Services
             _contentRootDirectoy = new DirectoryInfo(hostingEnv.ContentRootPath);
         }
 
-        public async Task<ShowDetails> LoadAsync(string showId)
+        public async Task<ShowDetails> LoadAsync(string showId, DateTimeOffset showDate)
         {
             var result = _cache.Get<ShowDetails>(GetCacheKey(showId));
 
