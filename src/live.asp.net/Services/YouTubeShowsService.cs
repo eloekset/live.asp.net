@@ -246,6 +246,15 @@ namespace live.asp.net.Services
                     ThumbnailUrl = "http://img.youtube.com/vi/7O81CAjmOXk/mqdefault.jpg",
                     Url = "https://www.youtube.com/watch?v=7O81CAjmOXk&index=1&list=PL0M0zPgJ3HSftTAAHttA3JQU4vOjXFquF"
                 },
+                new Show
+                {
+                    ShowDate = new DateTimeOffset(2016, 7, 12, 15, 30, 0, _pdtOffset),
+                    Title = "ASP.NET Community Standup - July 12th, 2016 - Steve Sanderson",
+                    Provider = "YouTube",
+                    ProviderId = "HAjUJOc7yW4",
+                    ThumbnailUrl = "http://img.youtube.com/vi/7O81CAjmOXk/mqdefault.jpg",
+                    Url = "https://www.youtube.com/watch?v=HAjUJOc7yW4&list=PL0M0zPgJ3HSftTAAHttA3JQU4vOjXFquF"
+                }
             };
 
             public static readonly IList<ShowDetails> ShowDetails = new List<ShowDetails>
