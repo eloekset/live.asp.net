@@ -209,6 +209,34 @@ namespace live.asp.net.Services
 
             public static readonly IList<Show> Shows = new List<Show>
             {
+
+                new Show
+                {
+                    ShowDate = new DateTimeOffset(2016, 7, 12, 15, 30, 0, _pdtOffset),
+                    Title = "Steve Sanderson",
+                    Provider = "YouTube",
+                    ProviderId = "HAjUJOc7yW4",
+                    ThumbnailUrl = "http://i.ytimg.com/vi/HAjUJOc7yW4/mqdefault.jpg",
+                    Url = "https://www.youtube.com/watch?v=HAjUJOc7yW4&list=PL0M0zPgJ3HSftTAAHttA3JQU4vOjXFquF"
+                },
+                new Show
+                {
+                    ShowDate = new DateTimeOffset(2016, 7, 5, 15, 30, 0, _pdtOffset),
+                    Title = "Azure Kudu Speedups",
+                    Provider = "YouTube",
+                    ProviderId = "i4pLgQw6bRA",
+                    ThumbnailUrl = "http://i.ytimg.com/vi/i4pLgQw6bRA/mqdefault.jpg",
+                    Url = "https://www.youtube.com/watch?v=i4pLgQw6bRA&list=PL0M0zPgJ3HSftTAAHttA3JQU4vOjXFquF"
+                },
+                new Show
+                {
+                    ShowDate = new DateTimeOffset(2016, 6, 28, 15, 30, 0, _pdtOffset),
+                    Title = ".NET Core 1.0 released!",
+                    Provider = "YouTube",
+                    ProviderId = "kSPQf5KugMY",
+                    ThumbnailUrl = "http://i.ytimg.com/vi/kSPQf5KugMY/mqdefault.jpg",
+                    Url = "https://www.youtube.com/watch?v=kSPQf5KugMY&list=PL0M0zPgJ3HSftTAAHttA3JQU4vOjXFquF"
+                },
                 new Show
                 {
                     ShowDate = new DateTimeOffset(2015, 7, 21, 9, 30, 0, _pdtOffset),
@@ -227,7 +255,6 @@ namespace live.asp.net.Services
                     ThumbnailUrl = "http://img.youtube.com/vi/bFXseBPGAyQ/mqdefault.jpg",
                     Url = "https://www.youtube.com/watch?v=bFXseBPGAyQ&index=2&list=PL0M0zPgJ3HSftTAAHttA3JQU4vOjXFquF"
                 },
-
                 new Show
                 {
                     ShowDate = new DateTimeOffset(2015, 7, 7, 15, 30, 0, _pdtOffset),
@@ -245,15 +272,6 @@ namespace live.asp.net.Services
                     ProviderId = "7O81CAjmOXk",
                     ThumbnailUrl = "http://img.youtube.com/vi/7O81CAjmOXk/mqdefault.jpg",
                     Url = "https://www.youtube.com/watch?v=7O81CAjmOXk&index=1&list=PL0M0zPgJ3HSftTAAHttA3JQU4vOjXFquF"
-                },
-                new Show
-                {
-                    ShowDate = new DateTimeOffset(2016, 7, 12, 15, 30, 0, _pdtOffset),
-                    Title = "ASP.NET Community Standup - July 12th, 2016 - Steve Sanderson",
-                    Provider = "YouTube",
-                    ProviderId = "HAjUJOc7yW4",
-                    ThumbnailUrl = "http://img.youtube.com/vi/7O81CAjmOXk/mqdefault.jpg",
-                    Url = "https://www.youtube.com/watch?v=HAjUJOc7yW4&list=PL0M0zPgJ3HSftTAAHttA3JQU4vOjXFquF"
                 }
             };
 
